@@ -81,7 +81,7 @@ usuario = UsuarioAdoptante("Morena", "12345678", "Solecito@gmail.com", "Shih Tzu
 sistema.registrar_usuario(usuario)
 
 # Mostrar perros disponibles para adoptar
-sistema.mostrar_disponibles()
+sistema.mostrar_disponibles(
 
 # Sugerir según preferencias
 sistema.sugerir_perros(usuario)
