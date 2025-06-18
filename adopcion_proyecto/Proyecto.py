@@ -71,23 +71,23 @@ class SistemaAdopcion:
 
 sistema = SistemaAdopcion()
 
-# Cargar perros los perros para adoptar
+# Cargar para adoptar
 sistema.cargar_perro(Perro(1, "Luna", "Shih Tzu", 19, "enana", 6.0, "Sana", True, "Vieja"))
 sistema.cargar_perro(Perro(2, "Sasha", "Boxer", 9, "grande", 12.0, "Sana", True, "Juguetona"))
 sistema.cargar_perro(Perro(3, "Puppy", "Caniche", 11, "mediana", 9.0, "Sana", True, "Protectora"))
 
-# Registrar al usuario para adoptar
+# Registrar para adoptar
 usuario = UsuarioAdoptante("Morena", "12345678", "Solecito@gmail.com", "Shih Tzu", 6, "enana")
 sistema.registrar_usuario(usuario)
 
-# Mostrar perros disponibles para adoptar
+# Mostrar para adoptar
 sistema.mostrar_disponibles()
 
-# Sugerir según preferencias
+# Sugerir
 sistema.sugerir_perros(usuario)
 
 # Adoptar un perro !!!
 sistema.adoptar_perro(usuario, 1)
 
-# Ver historial del usuario
+# Ver historial
 usuario.ver_historial()
